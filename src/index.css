@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  /* Primary brand colors */
+  --primary: #ffaa00;
+  --primary-accent: #cc8800;
+
+  /* Background */
+  --bg-primary: #f7f7f7;
+  --bg-secondary: #ffffff;
+
+  /* Text colors */
+  --text-color: #000;
+  --text-muted: #777777;
+  --color-white: #ffffff;
+
+  /* Border */
+  --gray-border: solid 1px #ccc;
+
+  /* Radius */
+  --radius-1: 5px;
+  --radius-2: 1rem;
+  --radius-3: 1.5rem;
+  --radius-4: 2.5rem;
+  --radius-5: 100%;
+
+  /* Shadows */
+  --box-shadow: rgba(52, 51, 51, 0.2) 0px 4px 12px;
+
+  /* Typography */
+  --font-size-base: 16px;
+  --font-size-large: 18px;
+  --font-size-small: 14px;
+
+  /* Transitions */
+  --transition: 0.4s ease-in-out;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-secondary);
+  color: var(--text-color);
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  max-width: 2000px;
+  margin: auto;
+  background: var(--bg-primary);
+  overflow: hidden;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.object__contain {
+  object-fit: contain;
+}
+
+a {
+  display: inline-block;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+input,
+textarea {
+  background: transparent;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.primary {
+  color: var(--primary);
+}
+.muted {
+  color: var(--text-muted);
+}
+.text__gradient {
+  background: linear-gradient(var(--primary), #6a11cb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 55px;
+}
+.sub__heading {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.line__clamp__2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.btn {
+  color: var(--primary);
+  border-radius: var(--radius-1);
+  font-size: var(--font-size-base);
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: solid 1px var(--primary);
+  transition: background-color var(--transition), transform var(--transition);
+}
+.btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+  color: var(--color-white);
+}
+.btn.primary {
+  background: var(--primary);
+  color: var(--color-white);
+}
+.btn.primary:hover {
+  background: var(--primary-accent);
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  background: var(--bg-secondary);
+  font-size: 20px;
+  border-radius: var(--radius-2);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+.overlay__div {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.blur__effect {
+  position: relative;
+}
+.blur__effect::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  background: var(--primary);
+  background: linear-gradient(190deg, var(--primary) 0%, transparent 100%);
+  border-radius: 50%;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.section__header > .title {
+  margin-bottom: 20px;
+}
+.section__header > .description {
+  margin: 20px 0;
+  font-size: var(--font-size-base);
+}
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 100px 50px;
+  overflow: hidden;
+}
+@media (max-width: 930px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 500px) {
+  .sub__heading {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

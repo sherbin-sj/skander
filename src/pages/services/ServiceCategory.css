@@ -1,0 +1,312 @@
+.civil-works-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.container {
+  padding: 40px 50px;
+}
+/* Header Styles */
+.civil-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.container {
+  padding: 20px 70px;
+}
+
+.civil-main-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title-decoration {
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-accent));
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Back Button */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: var(--color-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-1);
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+  margin: 0 auto 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.back-button:hover {
+  background: var(--primary-accent);
+}
+
+/* Section Styles */
+.civil-section {
+  margin-bottom: 120px;
+  opacity: 1;
+}
+
+.civil-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.civil-content.reverse {
+  direction: rtl;
+}
+
+.civil-content.reverse > * {
+  direction: ltr;
+}
+
+.civil-text {
+  padding: 20px;
+}
+
+.civil-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-accent) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  margin-bottom: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.civil-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.civil-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.civil-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.civil-features li {
+  position: relative;
+  padding: 8px 0 8px 30px;
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.civil-features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Image Styles */
+.civil-image {
+  position: relative;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transform: translateZ(0);
+}
+
+.civil-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.civil-image:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(var(--primary-rgb), 0.1) 0%, rgba(var(--primary-accent-rgb), 0.05) 100%);
+  pointer-events: none;
+}
+
+/* CTA Section */
+.civil-cta {
+  text-align: center;
+  background: var(--bg-secondary);
+  padding: 60px 40px;
+  border-radius: var(--radius-3);
+  box-shadow: var(--box-shadow);
+  border: 1px solid rgba(var(--primary-rgb), 0.1);
+  margin-top: 50px;
+}
+
+.civil-cta h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.civil-cta p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-accent) 100%);
+  color: var(--color-white);
+  border: none;
+  padding: 15px 40px;
+  border-radius: var(--radius-1);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .civil-content {
+    gap: 40px;
+  }
+  
+  .civil-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .civil-works-page {
+    padding: 80px 0 30px;
+  }
+  
+  .civil-main-title {
+    font-size: 36px;
+  }
+  
+  .civil-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .civil-content.reverse {
+    direction: ltr;
+  }
+  
+  .civil-section {
+    margin-bottom: 80px;
+  }
+  
+  .civil-title {
+    font-size: 26px;
+  }
+  
+  .civil-description {
+    font-size: 16px;
+  }
+  
+  .civil-image img {
+    height: 300px;
+  }
+  
+  .civil-cta {
+    padding: 40px 25px;
+  }
+  
+  .civil-cta h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .civil-main-title {
+    font-size: 32px;
+  }
+  
+  .civil-header {
+    margin-bottom: 60px;
+  }
+  
+  .civil-text {
+    padding: 10px;
+  }
+  
+  .civil-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .civil-title {
+    font-size: 24px;
+  }
+  
+  .civil-cta {
+    padding: 30px 20px;
+  }
+  
+  .civil-cta h3 {
+    font-size: 24px;
+  }
+}
+
+/* Animation Classes */
+.civil-animate {
+  opacity: 1;
+}
+
+/* Ensure smooth scrolling for GSAP */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print Styles */
+@media print {
+  .civil-works-page {
+    padding: 20px 0;
+  }
+  
+  .back-button,
+  .civil-cta {
+    display: none;
+  }
+}

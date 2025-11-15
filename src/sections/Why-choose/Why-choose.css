@@ -1,0 +1,162 @@
+#Why-choose {
+  position: relative;
+  background: var(--primary);
+}
+
+#Why-choose .container{
+  display: grid;
+  grid-template-columns: 400px auto;
+  gap: 2rem;
+  background: var(--primary);
+  border-top-left-radius: var(--radius-5);
+  overflow: visible;
+}
+
+
+#Why-choose .choose__image {
+  flex: 1;
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  max-width: 400px;
+  margin: auto;
+  border: solid 10px var(--primary);
+  /* Smooth image animation */
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+}
+
+/* Image scale and shadow on hover */
+#Why-choose .choose__image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#Why-choose .choose__image img {
+  transition: transform 0.6s ease;
+}
+
+#Why-choose .choose__image:hover img {
+  transform: scale(1.08);
+}
+
+#Why-choose .section__header {
+  flex: 1;
+}
+
+#Why-choose .why__choose__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#Why-choose .why__choose__card {
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: var(--radius-2);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  /* Enhanced card animation */
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+/* Enhanced card hover with shadow */
+#Why-choose .why__choose__card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+#Why-choose .keypoints__container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+#Why-choose .keypoints__container .keypoint{
+  align-items: center;
+  gap: 10px;
+  /* Smooth keypoint animation */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Keypoint hover effect */
+#Why-choose .keypoints__container .keypoint:hover {
+  transform: translateX(5px);
+}
+
+/* Keypoint icon animation */
+#Why-choose .keypoint .icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#Why-choose .keypoints__container .keypoint:hover .icon {
+  transform: scale(1.15);
+  color: var(--color-white);
+}
+
+#Why-choose .keypoint .title{
+  font-size: var(--font-size-base);
+}
+
+/* Unwanted */
+
+#Why-choose .why__choose__card:hover {
+  transform: translateY(-5px);
+}
+
+#Why-choose .why__choose__card .icon {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  /* Icon animation */
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+/* Icon bounce on card hover */
+#Why-choose .why__choose__card:hover .icon {
+  transform: translateY(-5px) rotate(5deg);
+}
+
+#Why-choose .why__choose__card .card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#Why-choose .why__choose__card .card__description {
+  color: var(--text-muted);
+  font-size: var(--font-size-small);
+  line-height: 1.6;
+}
+
+/* Make it Responsive */
+
+@media (max-width:1280){
+  #Why-choose .keypoints__container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 930px) {
+  #Why-choose .why__choose__content {
+    flex-direction: column;
+  }
+  
+  #Why-choose .why__choose__cards {
+    grid-template-columns: 1fr;
+  }
+  #Why-choose .container{
+    grid-template-columns: 100%;
+    border-top-left-radius: 70%;
+
+  }
+}
+
+@media (max-width: 500px) {  
+  #Why-choose .keypoints__container{
+    grid-template-columns: 100%;
+    
+  }
+}

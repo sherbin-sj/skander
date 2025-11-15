@@ -1,0 +1,58 @@
+/* Magnetic Cursor Styles - Premium custom cursor effect */
+
+.magnetic-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35px;  /* Increased from 40px */
+  height: 35px;  /* Increased from 40px */
+  border-radius: 60%;
+  background: rgba(77, 77, 77, 0.243);  /* Changed to subtle black */
+  border: 2px solid rgba(69, 69, 69, 0.295);  /* Darker border */
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: normal;  /* Changed from difference for better visibility */
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.cursor-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;  /* Increased from 8px */
+  height: 8px;  /* Increased from 8px */
+  background: rgba(0, 0, 0, 0.6);  /* Changed to dark */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.magnetic-cursor.cursor-hover {
+  background: rgba(0, 0, 0, 0.15);  /* Slightly darker on hover */
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.magnetic-cursor.cursor-hover .cursor-dot {
+  width: 10px;  /* Increased from 12px */
+  height: 10px;  /* Increased from 12px */
+  background: rgba(0, 0, 0, 0.8);  /* Darker on hover */
+}
+
+/* Hide default cursor on desktop */
+@media (min-width: 1024px) {
+  body {
+    cursor: none;
+  }
+  
+  a, button, .project-card, .portfolio, .filter-btn {
+    cursor: none;
+  }
+}
+
+/* Show default cursor on mobile/tablet */
+@media (max-width: 1023px) {
+  .magnetic-cursor {
+    display: none !important;
+  }
+}

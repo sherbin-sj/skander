@@ -250,7 +250,7 @@ const Services = () => {
         >
           <h1 className="services-main-heading">Our Services</h1>
           <p className="services-main-description">
-            Comprehensive construction solutions tailored to meet your unique needs and exceed your expectations.
+            Comprehensive construction solutions tailored to meet your unique project needs and exceed expectations. With a commitment to quality, innovation, and timely delivery, we provide end-to-end services that cover planning, design, execution, and final handover.
           </p>
           <motion.div 
             className="scroll-indicator"
@@ -271,10 +271,8 @@ const Services = () => {
             >
               {/* Image Side */}
               <div className="service-image-container">
-                <div className="service-image-wrapper">
                   <img src={service.image} alt={service.title} />
                   <div className="image-overlay"></div>
-                </div>
               </div>
 
               {/* Content Side */}

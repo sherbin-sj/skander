@@ -1,6 +1,5 @@
 #portfolio{
     background: var(--bg-secondary);
-    background-image: url('../../assets/watercolor.png');
     background-repeat: no-repeat;
     background-size: 100% 200px;
     background-position: center 70px;

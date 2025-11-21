@@ -16,6 +16,10 @@
     margin-bottom: 30px;
 }
 
+#hero .description{
+    text-align: justify;
+}
+
 #hero .hero__content .heading{
     margin: 1.5rem 0;
     background: linear-gradient(black,orangered,var(--primary));

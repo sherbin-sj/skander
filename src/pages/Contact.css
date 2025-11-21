@@ -67,7 +67,7 @@
 
 /* Icon shadow on item hover */
 .contact-item:hover .contact-icon {
-  box-shadow: 0 8px 20px rgba(255, 170, 0, 0.4);
+  box-shadow: 0 8px 20px rgba(19, 50, 101, 0.4);
 }
 
 .contact-text h3 {

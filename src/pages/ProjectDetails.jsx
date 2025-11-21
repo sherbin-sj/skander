@@ -36,7 +36,7 @@ const ProjectDetails = () => {
 
   return (
     <motion.section 
-      className="project-details-page blur__effect"
+      className="project-details-page"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}

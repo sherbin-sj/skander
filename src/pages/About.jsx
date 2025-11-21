@@ -114,9 +114,9 @@ const About = () => {
     {
       icon: <Home className="process-icon" size={30} />,
       image: process4,
-      title: "Move-in",
+      title: "Delivery",
       description:
-        "We conduct thorough inspections and final walkthroughs to ensure everything meets our quality standards before you move into your new space.",
+        "We deliver your project on time with full quality checks and handover procedures ensuring a smooth transition into your finished space.",
     },
   ];
 
@@ -228,7 +228,7 @@ const About = () => {
 
   return (
     <motion.section
-      className="about-page blur__effect"
+      className="about-page"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}

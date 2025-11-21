@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 import "./Portfolio.css";
 import { portfolio } from '../../data';
 
@@ -18,6 +19,29 @@ const Portfolio = () => {
     if (el && !portfolioRefs.current.includes(el)) {
       portfolioRefs.current.push(el);
     }
+  };
+
+  // Map portfolio categories to service routes
+  const categoryRoutes = {
+    "plan approvals": "/service/plan-approvals",
+    "civil works": "/service/civil-works",
+    "residential commercial project": "/service/residential-commercial-projects",
+    "mep": "/service/mep",
+    "renovations": "/service/renovations",
+    "painting": "/service/painting",
+    "landscaping": "/service/landscaping",
+    "restaurants & hotels": "/service/restaurants-hotels",
+    "bars lounges": "/service/bars-lounges"
+  };
+
+  // Map project categories to the service categories
+  const categoryMap = {
+    "residential": "residential commercial project",
+    "commercial": "residential commercial project",
+    "retail": "residential commercial project",
+    "hospitality": "restaurants hotels",
+    "restaurants & hotels": "restaurants hotels",
+    "industrial": "civil works"
   };
 
   // Animation variants
@@ -109,7 +133,7 @@ const Portfolio = () => {
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
                 >
-                  Crafting Space, Building Dreams
+                  Services We Provide
                 </motion.h3>
                 <motion.p 
                   className="description"
@@ -119,16 +143,22 @@ const Portfolio = () => {
                   viewport={{ once: true }}
                 >
                     {" "}
-                    Explore our innovative design concepts that transform spaces into extraordinary experiences
+                    Professional construction services engineered for long-lasting performance.
 
                 </motion.p>
             </motion.div>
             {/* Portfolio items with staggered animations and hover effects */}
             <div className="portfolio__container">
-                {portfolio.slice(0, 3).map((item,index)=>(
+                {portfolio.slice(0, 3).map((item,index)=>{
+                  // Get the route for the project's category
+                  const projectCategory = item.category.toLowerCase();
+                  const mappedCategory = categoryMap[projectCategory] || projectCategory;
+                  const route = categoryRoutes[mappedCategory] || "/services";
+                  
+                  return (
+                <Link to={route} key={index} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <motion.div 
                   className="flex portfolio" 
-                  key={index}
                   ref={addToRefs}
                   custom={index}
                   variants={cardVariants}
@@ -173,7 +203,8 @@ const Portfolio = () => {
                         </div>
                    </motion.div>
                 </motion.div>
-                ))}
+                </Link>
+                )})}
                 </div>
         </div>
     </section>

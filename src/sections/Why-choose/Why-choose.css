@@ -7,11 +7,15 @@
   display: grid;
   grid-template-columns: 400px auto;
   gap: 2rem;
-  background: var(--primary);
+  background: #e6f3ff;
   border-top-left-radius: var(--radius-5);
   overflow: visible;
+  box-shadow: rgba(52, 51, 51, 0.2) 0px 6px 15px;;
 }
 
+#Why-choose .description {
+  text-align: justify;
+}
 
 #Why-choose .choose__image {
   flex: 1;

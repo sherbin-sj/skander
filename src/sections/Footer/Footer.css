@@ -7,17 +7,43 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
+    align-items: start;  /* Align items to the top */
+    padding: 2rem 1rem;  /* Add padding to create space on left and right */
 }
+#footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* Align content to the left */
+}
+
 #footer .logo__container{
     justify-content: flex-start;
+    margin-bottom: 1rem;  /* Add spacing below logo */
 }
+
 #footer .title{
     font-size: 18px;
+    margin-bottom: 1.5rem;  /* Consistent spacing below titles */
+    align-self: flex-start;  /* Align title to the left */
 }
+
 #footer .route{
     color: var(--text-color);
-    display:block;
-    margin: 20px 0;
+    display: block;
+    margin: 0.8rem 0;  /* More consistent spacing */
+    text-decoration: none;
+    transition: color 0.3s ease;  /* Smooth hover transition */
+}
+
+#footer .route:hover {
+    color: var(--primary);  /* Hover effect */
+    transform: translateX(5px);  /* Subtle movement on hover */
+    transition: all 0.3s ease;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.6;  /* Better readability */
 }
 
 /* Responcive */

@@ -33,6 +33,7 @@
   font-size: var(--font-size-base);
   color: var(--text-muted);
   line-height: 1.8;
+  text-align: justify;
 }
 
 .about-hero-buttons {
@@ -203,6 +204,7 @@
 .mission-card p {
   color: var(--text-muted);
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* Leadership Section */
@@ -266,12 +268,14 @@
   color: var(--primary);
   font-weight: 500;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .leader-info .description {
   color: var(--text-muted);
   line-height: 1.7;
   margin: 0;
+  text-align: justify;
 }
 
 /* Process Section - Updated to match Services.jsx design */
@@ -340,6 +344,7 @@
 .process-step p {
   color: var(--text-muted);
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Responsive Design */

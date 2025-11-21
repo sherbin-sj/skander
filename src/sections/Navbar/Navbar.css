@@ -72,6 +72,9 @@
         display: flex;
 
     }
+    .navbar .btn{
+        display: none;
+    }
 }
 @media (max-width:950px){
     .navbar{
@@ -82,6 +85,9 @@
     }
     .navbar .menu__btn{
         display: flex;
+    }
+    .navbar .btn{
+        display: none;
     }
     
 }

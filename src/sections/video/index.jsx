@@ -9,14 +9,10 @@ const Video = () => {
     <section id="video">
       <div className="container">
         <div className="section__header">
-          <h3 className="title">Some Video Samples</h3>
+          <h3 className="title">Demo Videos</h3>
           <h4 className="sub__heading">Experience Our Work in Motion</h4>
           <p className="description">
-            Take a closer look at our craftsmanship through these project
-            videos. Each clip showcases the quality, precision, and innovation
-            that define Skander’s work — from concept planning to final
-            construction. Whether it’s residential, commercial, or civil
-            projects, our commitment to excellence is built into every frame.
+              This demo video highlights our workflow, craftsmanship, and the dedication that drives every build — delivering spaces that are durable, efficient, and future-ready. From planning to final handover, we prioritize quality, safety, and seamless execution to turn vision into reality.
           </p>
         </div>
         <div>

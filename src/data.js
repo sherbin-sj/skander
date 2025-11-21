@@ -55,10 +55,6 @@ export const navigations = [
     to: "/services",
   },
   {
-    label: "Projects",
-    to: "/projects",
-  },
-  {
     label: "Contact Us",
     to: "/contact",
   },
@@ -370,21 +366,11 @@ export const socialHandles = [
   {
     name: "Facebook",
     icon: <FaFacebook />,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/share/1CcfmWqqYf/",
   },
   {
     name: "Instagram",
     icon: <FaInstagram />,
     link: "https://www.instagram.com/skandar_constructions/",
-  },
-  {
-    name: "LinkedIn",
-    icon: <FaLinkedin />,
-    link: "https://www.linkedin.com",
-  },
-  {
-    name: "Youtube",
-    icon: <FaYoutube />,
-    link: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
   },
 ];

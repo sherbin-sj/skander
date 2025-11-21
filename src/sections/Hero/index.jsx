@@ -80,7 +80,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section id="hero" className="blur__effect" ref={heroRef}>
+    <section id="hero" ref={heroRef}>
       <div className="overlay__div">
         <div className="container">
           {/* Left column with staggered fade-in animations */}
@@ -99,7 +99,7 @@ const Hero = () => {
                 Building Dreams, Creating Spaces
               </motion.h1>
               <motion.p 
-                className="discription" 
+                className="description" 
                 ref={descriptionRef}
                 variants={fadeInUp}
               >

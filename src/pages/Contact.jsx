@@ -74,7 +74,7 @@ const Contact = () => {
 
   return (
     <motion.section 
-      className="contact-page blur__effect"
+      className="contact-page"
       initial="hidden"
       animate="visible"
       variants={staggerContainer}

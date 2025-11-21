@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Why-choose.css";
-import { about } from "../../assets";
+import { about1 } from "../../assets";
 import { keypoints } from "../../data";
 
 // Register GSAP plugins
@@ -100,7 +100,7 @@ const WhyChoose = () => {
             ref={imageRef}
           >
             <motion.img 
-              src={about} 
+              src={about1} 
               alt="About us" 
               className="object__contain"
               whileHover={{ scale: 1.03, rotate: 1 }}

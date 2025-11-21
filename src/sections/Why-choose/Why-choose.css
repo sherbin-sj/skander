@@ -5,7 +5,7 @@
 
 #Why-choose .container{
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 300px 1fr;
   gap: 2rem;
   background: #e6f3ff;
   border-top-left-radius: var(--radius-5);
@@ -13,20 +13,22 @@
   box-shadow: rgba(52, 51, 51, 0.2) 0px 6px 15px;;
 }
 
+.container {
+    padding: 10px 20px;
+}
+
 #Why-choose .description {
   text-align: justify;
 }
 
 #Why-choose .choose__image {
-  flex: 1;
-  border-radius: var(--radius-3);
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-  max-width: 400px;
-  margin: auto;
-  border: solid 10px var(--primary);
-  /* Smooth image animation */
+  /* Reduce image size and place on left side */
+  max-width: 100%;
+  width: 100%;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+  /* Remove any default margins or padding */
+  margin: 0;
+  padding: 0;
 }
 
 /* Image scale and shadow on hover */
@@ -36,6 +38,9 @@
 }
 
 #Why-choose .choose__image img {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
   transition: transform 0.6s ease;
 }
 
@@ -44,7 +49,7 @@
 }
 
 #Why-choose .section__header {
-  flex: 1;
+  align-self: center;
 }
 
 #Why-choose .why__choose__cards {

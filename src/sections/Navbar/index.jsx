@@ -34,7 +34,7 @@ const Navbar = () => {
           ))}
         </div>
         <SocialHandles />
-        <div className="flex-center">
+        <div className="flex-center get_btn">
           <NavLink to="/contact" className="flex__center btn primary">
             {" "}
             get a quote

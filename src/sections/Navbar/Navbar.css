@@ -63,6 +63,10 @@
     display: none;
 }
 
+.get_btn{
+    padding-right: 40px;
+}
+
 /*.  Make a navbar Responsive.   */
 @media (max-width:1156px){
     .navbar .social__handles{

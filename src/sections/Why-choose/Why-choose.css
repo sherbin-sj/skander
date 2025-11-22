@@ -6,16 +6,14 @@
 #Why-choose .container{
   display: grid;
   grid-template-columns: 300px 1fr;
-  gap: 2rem;
+  gap: 0;
   background: #e6f3ff;
   border-top-left-radius: var(--radius-5);
   overflow: visible;
-  box-shadow: rgba(52, 51, 51, 0.2) 0px 6px 15px;;
+  box-shadow: rgba(52, 51, 51, 0.2) 0px 6px 15px;
+  padding: 0px 50px;
 }
 
-.container {
-    padding: 10px 20px;
-}
 
 #Why-choose .description {
   text-align: justify;
@@ -29,19 +27,25 @@
   /* Remove any default margins or padding */
   margin: 0;
   padding: 0;
+  /* Remove white frame and blend image naturally */
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* Image scale and shadow on hover */
-#Why-choose .choose__image:hover {
-  transform: scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
 
 #Why-choose .choose__image img {
   width: 100%;
   height: auto;
   margin-top: 0;
   transition: transform 0.6s ease;
+  /* Remove white frame and blend image naturally */
+  border: none;
+  outline: none;
+  box-shadow: none;
+  /* Ensure image blends naturally into background */
+  mix-blend-mode: normal;
 }
 
 #Why-choose .choose__image:hover img {
@@ -50,6 +54,7 @@
 
 #Why-choose .section__header {
   align-self: center;
+  padding: 20px;
 }
 
 #Why-choose .why__choose__cards {

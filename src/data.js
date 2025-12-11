@@ -373,4 +373,9 @@ export const socialHandles = [
     icon: <FaInstagram />,
     link: "https://www.instagram.com/skandar_constructions/",
   },
+    {
+    name: "YouTube",
+    icon: <FaYoutube />,
+    link: "https://www.youtube.com/channel/UCEtnsPZQEd0l1tbr_nDQd5Q?sub_confirmation=1",
+  },
 ];

@@ -22,7 +22,7 @@ export { default as user1 } from "./user1.jpg";
 export { default as user2 } from "./user2.jpg";
 export { default as user3 } from "./user3.jpg";
 export { default as user4 } from "./user4.jpg";
-export { default as blog1 } from "./blog1.mp4";
+export { default as blog1 } from "./blog4.mp4";
 export { default as blog2 } from "./blog2.mp4";
 export { default as blog3 } from "./blog3.mp4";
 export { default as designSolutionsImage } from "./structure-design.jpg";

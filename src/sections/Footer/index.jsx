@@ -9,7 +9,7 @@ function Footer() {
     <footer id="footer">
       <div className="overlay__div">
         <div className="container">
-          <div className="column">
+          <div className="logo__container">
             <Logo />
             <p>
               Our mission is to build lasting spaces that inspire and uplift,

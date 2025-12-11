@@ -9,7 +9,7 @@ import WhyChoose from "./sections/Why-choose";
 import Portfolio from "./sections/Portfolio";
 import Video from "./sections/video";
 import Footer from "./sections/Footer";
-import MagneticCursor from "./components/MagneticCursor";
+// import MagneticCursor from "./components/MagneticCursor";
 
 // Import new pages
 import About from "./pages/About";
@@ -70,7 +70,7 @@ function App() {
   return (
     <Router>
       {/* Premium magnetic cursor effect */}
-      <MagneticCursor />
+      {/* <MagneticCursor /> */}
       <Navbar/>
       <Routes>
         <Route path="/" element={

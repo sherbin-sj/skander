@@ -9,9 +9,10 @@
 
 .contact-page .page-header .description {
   max-width: 700px;
-  margin: 20px auto 0;
+  margin: auto;
   font-size: var(--font-size-base);
   color: var(--text-muted);
+  padding-top: 30px;
 }
 
 .contact-container {

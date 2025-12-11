@@ -41,13 +41,13 @@
 
 /* Hide default cursor on desktop */
 @media (min-width: 1024px) {
-  body {
+  /* body {
     cursor: none;
-  }
+  } */
   
-  a, button, .project-card, .portfolio, .filter-btn {
+  /* a, button, .project-card, .portfolio, .filter-btn {
     cursor: none;
-  }
+  } */
 }
 
 /* Show default cursor on mobile/tablet */

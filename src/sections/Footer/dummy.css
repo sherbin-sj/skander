@@ -64,47 +64,21 @@
 }
 
 /* Responsive */
-
-
-@media (max-width: 1024px) {
+@media (max-width: 930px) {
     #footer .container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    #footer .column {
-        padding-left: 40px; /* Reduce heavy spacing */
-    }
-    #footer .logo__container {
-        align-items: center;
-        text-align: center;
-        padding-left: 50px;
+        gap: 1.5rem;
     }
 }
+
 @media (max-width: 768px) {
-    /* Footer container becomes 1 column */
     #footer .container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        text-align: center;
     }
 
-    /* Add left spacing ONLY for logo and paragraph */
+    #footer .column,
     #footer .logo__container {
-        align-items: flex-start;
-        text-align: left;
-        padding-left: 20px;   /* Add left space */
-    }
-
-    #footer .logo__container p {
-        text-align: left;
-        margin-top: 1rem;
-        max-width: 90%;
-        padding-left: 10px;   /* Smooth left alignment */
-    }
-
-    /* Column alignment */
-    #footer .column {
-        align-items: flex-start;
-        padding-left: 20px;   /* Same left spacing for consistency */
+        align-items: center;
     }
 }

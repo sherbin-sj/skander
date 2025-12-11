@@ -106,27 +106,25 @@
     }
 
     /* Add left spacing ONLY for logo and paragraph */
-    #footer .logo__container {
-        align-items: flex-start;
-        text-align: left;
-        padding-left: 20px;   /* Add left space */
-    }
-    git add .
-    #footer .logo__container .logo img {
-        max-width: 180px; /* Even smaller logo for mobile */
-        margin: 0 auto;
-    }
-
-    #footer .logo__container p {
-        text-align: left;
-        margin-top: 1rem;
-        max-width: 90%;
-        padding-left: 10px;   /* Smooth left alignment */
+    .logo__container {
+        width: 100%;
+        max-width: 600px;      /* keeps the content neat */
+        margin: 0 auto;        /* centers horizontally */
+        padding: 0 20px;       /* left-right spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* centers items */
+        text-align: center;    /* centers text */
     }
 
-    /* Column alignment */
     #footer .column {
-        align-items: flex-start;
-        padding-left: 20px;   /* Same left spacing for consistency */
+        width: 100%;
+        max-width: 600px;      /* keeps the content neat */
+        margin: 0 auto;        /* centers horizontally */
+        padding: 0 20px;       /* left-right spacing */
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* centers items */
+        text-align: center;    /* centers text */
     }
 }

@@ -123,4 +123,8 @@
   #video .swiper-button-next:after {
     font-size: 16px;
   }
+
+  #video .section__header .description {
+  text-align: justify;
+  }
 }

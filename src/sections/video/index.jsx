@@ -12,7 +12,9 @@ const Video = () => {
           <h3 className="title">Demo Videos</h3>
           <h4 className="sub__heading">Experience Our Work in Motion</h4>
           <p className="description">
-              This demo video highlights our workflow, craftsmanship, and the dedication that drives every build — delivering spaces that are durable, efficient, and future-ready. From planning to final handover, we prioritize quality, safety, and seamless execution to turn vision into reality.
+              This demo video highlights our workflow, craftsmanship, and the dedication that drives every build — delivering spaces that are 
+              durable, efficient, and future-ready. From planning to final handover, we prioritize quality, safety, and seamless execution to 
+              turn vision into reality.
           </p>
         </div>
         <div>

@@ -82,7 +82,7 @@ const About = () => {
     },
     {
       image: team3,
-      name: "Mrs.Rohini Sarath M",
+      name: "Mrs. Rohini Sarath M",
       designation: "Chief Architect",
       description:
         "Mrs. Rohini M, Chief Architect at Skandar Construction, is a visionary professional known for her expertise in architectural design and sustainable planning.",

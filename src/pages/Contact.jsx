@@ -109,7 +109,7 @@ const onSubmit = async (event) => {
         <motion.div className="page-header" variants={fadeInUp}>
           <h1 className="heading">Contact Us</h1>
           <p className="description">
-            Have a project in mind or questions about our services? Let's Talk.
+            Have a project in mind or questions about our services?   <span style={{ marginLeft: "6px", fontWeight: "700px" }}>Let's Talk.</span>
           </p>
         </motion.div>
 

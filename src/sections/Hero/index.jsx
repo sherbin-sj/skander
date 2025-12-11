@@ -128,8 +128,8 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
-                <Link to="/projects" className="btn">
-                  Projects{" "}
+                <Link to="/services" className="btn">
+                  Services{" "}
                 </Link>
               </motion.div>
               <motion.div
@@ -137,12 +137,12 @@ const Hero = () => {
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
-                <ScrollLink
-                  to="contact"
+                <Link
+                  to="/contact"
                   smooth={true}
                   className="flex__center btn primary">
                   Get a quote <IoCall />{" "}
-                </ScrollLink>
+                </Link>
               </motion.div>
             </motion.div>
           </motion.div>
